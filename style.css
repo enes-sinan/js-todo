@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #20262e;
+  color: #e9e8e8;
+}
+
+:root {
+  --w-10: 10%;
+  --btn-color: #913175;
+}
+
+.container {
+  border: 5px white solid;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-todo {
+  width: 80%;
+  border-bottom: 3px solid #cd5888;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-title {
+  font-size: 32px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 5px;
+}
+.input-add-todo {
+  width: 90%;
+  border: 2px solid #913175;
+  font-size: 28px;
+}
+.btn-add-todo {
+  width: 10%;
+  background-color: #913175;
+  font-size: 24px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-todos {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-todo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.check,
+.edit,
+.delete {
+  width: var(--w-10);
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-todo-text {
+  width: 70%;
+  font-size: 24px;
+}
+
+.task_disable {
+  text-decoration: line-through;
+  background-color: aqua;
+}
